@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: OpenAPI diff
     steps:
-      - name: Compare specs
+      - name: Compare OpenAPI specs
         id: compare
         uses: tufin/oasdiff-action@v1
         with:
