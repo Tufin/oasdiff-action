@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: OpenAPI diff
     steps:
-      - name: Hello world action step
-        id: hello
+      - name: Compare specs
+        id: compare
         uses: tufin/oasdiff-action@v1
         with:
           path: openapi-spec.yaml
