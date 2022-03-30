@@ -6,5 +6,5 @@ paths:
  /api/test:
    get:
      responses:
-       200:
+       201:
          description: OK
