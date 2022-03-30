@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-path=$(path)
-oasdiff -format text -base /github/workspace/$path -revision /github/workspace/$path
+echo "Hello $1"
+oasdiff -format text -base /github/workspace/$(path) -revision /github/workspace/$(path)

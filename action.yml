@@ -1,4 +1,3 @@
-# action.yml
 name: 'OpenAPI Spec Diff'
 description: 'A diff tool for OpenAPI Specification 3'
 inputs:
@@ -9,4 +8,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ github.event.inputs.path }}
+    - ${{ inputs.path }}
