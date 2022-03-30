@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  oasdiff_job:
+    runs-on: ubuntu-latest
+    name: OpenAPI diff
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: actions/oasdiff-action@v1
+        with:
+          path: openapi-spec.yaml
