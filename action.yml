@@ -9,7 +9,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.spec-path }}
-    - ${{ runner.os }}
+    - $RUNNER_OS
     # - ${{ github.event.pull_request.base.sha }}
     # - ${{ github.event.base_ref }}
     # - ${{ github.event.before }}
