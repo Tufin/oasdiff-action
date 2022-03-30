@@ -9,4 +9,4 @@ jobs:
         id: compare
         uses: tufin/oasdiff-action@v1
         with:
-          path: openapi-spec.yaml
+          spec-path: openapi-spec.yaml
