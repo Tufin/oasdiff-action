@@ -7,6 +7,18 @@ info:
 servers:
   - url: http://petstore.swagger.io/v1
 paths:
+  /healthcheck:
+    get:
+      summary: Health Check
+      description: >-
+        The healthcheck endpoint provides detailed information about the health
+        of a web service. If each of the components required by the service are
+        healthy, then the service is considered healthy and will return a 200 OK
+        response. If any of the components needed by the service are unhealthy,
+        then a 503 Service Unavailable response will be provided.
+      responses:
+        '200':
+          description: Health Check report
   /pets:
     get:
       summary: List all pets
