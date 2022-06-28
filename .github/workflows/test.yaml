@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test OpenAPI Spec diff action
     steps:
+        - name: checkout
+          uses: "actions/checkout@something"
         - name: Running OpenAPI Spec diff action
           id: test_ete
           uses: ./oasdiff-action
