@@ -1,0 +1,13 @@
+name: 'Test OpenAPI Spec Diff Action'
+on: push
+jobs:
+  oas_diff_job:
+    runs-on: ubuntu-latest
+    name: A job to test OpenAPI Spec diff action
+    steps:
+        - name: Running OpenAPI Spec diff action
+          id: test_ete
+          uses: actions/oasdiff-action@v1
+          with:
+            spec-path-a: 'specs/spec-a.yaml'
+            spec-path-b: 'specs/spec-b.yaml'
