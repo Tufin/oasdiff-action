@@ -58,4 +58,4 @@
 # git checkout $PREVIOUS_SHA
 # cp /github/workspace/$PATH /tmp/revision
 
-oasdiff -format text -base $1 -revision $2
+oasdiff -base "$1" -revision "$2"
