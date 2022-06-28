@@ -11,5 +11,5 @@ jobs:
           id: test_ete
           uses: ./
           with:
-            spec-path-a: 'specs/spec-a.yaml'
-            spec-path-b: 'specs/spec-b.yaml'
+            base: 'specs/base.yaml'
+            revision: 'specs/revision.yaml'
