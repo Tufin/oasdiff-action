@@ -9,7 +9,7 @@ jobs:
           uses: actions/checkout@v3
         - name: Running OpenAPI Spec diff action
           id: test_ete
-          uses: .
+          uses: ./
           with:
             spec-path-a: 'specs/spec-a.yaml'
             spec-path-b: 'specs/spec-b.yaml'
