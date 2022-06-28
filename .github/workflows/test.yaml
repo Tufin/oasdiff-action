@@ -7,7 +7,7 @@ jobs:
     steps:
         - name: Running OpenAPI Spec diff action
           id: test_ete
-          uses: actions/oasdiff-action@v1
+          uses: actions/oasdiff-action@1de2b5c7e3470f1c994d65c189403578dae27817
           with:
             spec-path-a: 'specs/spec-a.yaml'
             spec-path-b: 'specs/spec-b.yaml'
