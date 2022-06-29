@@ -1,6 +1,10 @@
 name: 'OpenAPI Spec Diff'
 description: 'A diff tool for OpenAPI Specification 3'
 inputs:
+  format:
+    description: 'Output format'
+    required: false
+    default: 'yaml'
   base:
     description: 'path of OpenAPI spec in YAML or JSON format'
     required: true
@@ -11,5 +15,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.format }}
     - ${{ inputs.base }}
     - ${{ inputs.revision }}

@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-oasdiff -base "$1" -revision "$2"
+oasdiff -format "$1" -base "$2" -revision "$3"
