@@ -23,6 +23,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.breaking-only }}
+    - ${{ inputs.fail-on-diff }}
     - ${{ inputs.format }}
     - ${{ inputs.base }}
     - ${{ inputs.revision }}

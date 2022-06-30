@@ -1,3 +1,3 @@
 #!/bin/sh
 set -e
-oasdiff -format "$1" -base "$2" -revision "$3"
+oasdiff -breaking-only "$1" -fail-on-diff "$2" -format "$3" -base "$4" -revision "$5"
