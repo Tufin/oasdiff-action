@@ -26,4 +26,4 @@ jobs:
           base: 'specs/base.yaml'
           revision: 'specs/revision-breaking-changes.yaml'
           format: 'text'
-          breaking-only: true
+          breaking-only: 'true'
