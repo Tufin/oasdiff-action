@@ -2,10 +2,10 @@ name: 'OpenAPI Spec Diff'
 description: 'A diff tool for OpenAPI Specification 3'
 inputs:
   base:
-    description: 'path of original OpenAPI spec in YAML or JSON format'
+    description: 'Path of original OpenAPI spec in YAML or JSON format'
     required: true
   revision:
-    description: 'path of revised OpenAPI spec in YAML or JSON format'
+    description: 'Path of revised OpenAPI spec in YAML or JSON format'
     required: true
   format:
     description: 'Output format'
