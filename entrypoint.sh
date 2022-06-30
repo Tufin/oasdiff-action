@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-readonly breaking_only="$1"
-readonly fail_on_diff="$2"
+readonly breaking_only=$1
+readonly fail_on_diff=$2
 readonly format="$3"
 readonly base="$4"
 readonly revision="$5"
