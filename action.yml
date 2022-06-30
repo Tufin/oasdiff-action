@@ -1,6 +1,16 @@
 name: 'OpenAPI Spec Diff'
 description: 'A diff tool for OpenAPI Specification 3'
 inputs:
+  base:
+    description: 'path of original OpenAPI spec in YAML or JSON format'
+    required: true
+  revision:
+    description: 'path of revised OpenAPI spec in YAML or JSON format'
+    required: true
+  format:
+    description: 'Output format'
+    required: false
+    default: 'yaml'
   breaking-only:
     description: 'Display breaking changes only'
     required: false
@@ -9,22 +19,12 @@ inputs:
     description: 'Fail with exit code 1 if a difference is found'
     required: false
     default: false
-  format:
-    description: 'Output format'
-    required: false
-    default: 'yaml'
-  base:
-    description: 'path of OpenAPI spec in YAML or JSON format'
-    required: true
-  revision:
-    description: 'path of OpenAPI spec in YAML or JSON format'
-    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.breaking-only }}
-    - ${{ inputs.fail-on-diff }}
-    - ${{ inputs.format }}
     - ${{ inputs.base }}
     - ${{ inputs.revision }}
+    - ${{ inputs.format }}
+    - ${{ inputs.breaking-only }}
+    - ${{ inputs.fail-on-diff }}

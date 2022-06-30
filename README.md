@@ -1,7 +1,15 @@
 # oasdiff-action
-GitHub action for comparing OpenAPI specs
+GitHub action for comparing OpenAPI specs, based on [oasdiff](https://github.com/Tufin/oasdiff) tool
 
 ## Inputs
 
-## `path`
-**Required** The path of the spec in the repository
+### `base`
+**Required** path of original OpenAPI spec in YAML or JSON format
+### `revision`
+**Required** path of revised OpenAPI spec in YAML or JSON format
+### `format`
+**Optional** output format: yaml, text or html (default "yaml")
+### `breaking-only`
+**Optional** display breaking changes only
+### `fail-on-diff`
+**Optional** fail with exit code 1 if a difference is found
