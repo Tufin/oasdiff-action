@@ -21,7 +21,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Running OpenAPI Spec diff action
         id: test_breaking_changes
-        uses: Tufin/oasdiff-action@v2
+        uses: Tufin/oasdiff-action@v1
         with:
           base: 'specs/base.yaml'
           revision: 'specs/revision-breaking-changes.yaml'
