@@ -7,6 +7,8 @@ format="$3"
 base="$4"
 revision="$5"
 
+echo "$breaking_only"
+
 if [ "$breaking_only" -eq 1 ] && [ "$fail_on_diff" -eq 1 ]
 then
   echo "running diff with breaking and failure"
