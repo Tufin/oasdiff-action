@@ -14,11 +14,11 @@ inputs:
   breaking-only:
     description: 'Display breaking changes only'
     required: false
-    default: 'false'
+    default: false
   fail-on-diff:
     description: 'Fail with exit code 1 if a difference is found'
     required: false
-    default: 'false'
+    default: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
