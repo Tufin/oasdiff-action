@@ -1,5 +1,5 @@
 # oasdiff-action
-[![CI](https://github.com/Tufin/oasdiff-action/actions/workflows/test.yaml/badge.svg)](https://github.com/Tufin/oasdiff-action/workflows/test.yaml)
+[![CI](https://github.com/Tufin/oasdiff-action/actions/workflows/test.yaml/badge.svg)](https://github.com/Tufin/oasdiff-action/actions)
 
 GitHub action for comparing OpenAPI specs, based on [oasdiff](https://github.com/Tufin/oasdiff) tool
 
