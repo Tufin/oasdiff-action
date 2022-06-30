@@ -23,7 +23,7 @@ jobs:
         id: test_breaking_changes
         uses: ./
         with:
-          fail-on-diff: true
-          breaking-only: true
           base: 'specs/base.yaml'
           revision: 'specs/revision-breaking-changes.yaml'
+          format: 'text'
+          breaking-only: true
