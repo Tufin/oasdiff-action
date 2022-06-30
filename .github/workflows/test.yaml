@@ -13,3 +13,17 @@ jobs:
           with:
             base: 'specs/base.yaml'
             revision: 'specs/revision.yaml'
+  oas_diff_breaking_changes_job:
+    runs-on: ubuntu-latest
+    name: A job to test OpenAPI Spec diff action
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: Running OpenAPI Spec diff action
+        id: test_breaking_changes
+        uses: ./
+        with:
+          fail-on-diff: true
+          breaking-only: true
+          base: 'specs/base.yaml'
+          revision: 'specs/revision-breaking-changes.yaml'

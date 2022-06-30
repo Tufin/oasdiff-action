@@ -1,6 +1,14 @@
 name: 'OpenAPI Spec Diff'
 description: 'A diff tool for OpenAPI Specification 3'
 inputs:
+  breaking-only:
+    description: 'Display breaking changes only'
+    required: false
+    default: false
+  fail-on-diff:
+    description: 'Fail with exit code 1 if a difference is found'
+    required: false
+    default: false
   format:
     description: 'Output format'
     required: false
