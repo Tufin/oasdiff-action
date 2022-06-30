@@ -1,11 +1,11 @@
 #!/bin/sh
 set -e
 
-readonly breaking_only=$1
-readonly fail_on_diff=$2
-readonly format="$3"
-readonly base="$4"
-readonly revision="$5"
+breaking_only=$1
+fail_on_diff=$2
+format="$3"
+base="$4"
+revision="$5"
 
 if [ "$breaking_only" -eq 1 ] && [ "$fail_on_diff" -eq 1 ]
 then
