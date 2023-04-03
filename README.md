@@ -13,7 +13,7 @@ Copy and paste the following snippet into your build .yml file:
     base: 'specs/base.yaml'
     revision: 'specs/revision-breaking-changes.yaml'
     format: 'text'
-    breaking-only: true
+    check-breaking: true
     fail-on-diff: true
 ```
 
@@ -25,7 +25,9 @@ Copy and paste the following snippet into your build .yml file:
 **Required** path of revised OpenAPI spec in YAML or JSON format
 ### `format`
 **Optional** output format: yaml, text or html (default "yaml")
-### `breaking-only`
-**Optional** display breaking changes only
 ### `fail-on-diff`
-**Optional** fail with exit code 1 if a difference is found
+**Optional** fail with non 0 exit code if a difference is found
+### `check-breaking`
+**Optional** display breaking changes (new method)
+### `breaking-only` [Deprecated]
+**Optional** display breaking changes (old method)
