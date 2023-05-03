@@ -12,7 +12,11 @@ inputs:
     required: false
     default: 'yaml'
   breaking-only:
-    description: 'Display breaking changes only'
+    description: 'Display breaking changes (deprecated)'
+    required: false
+    default: false
+  check-breaking:
+    description: 'Display breaking changes'
     required: false
     default: false
   fail-on-diff:
