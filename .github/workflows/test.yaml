@@ -26,4 +26,4 @@ jobs:
           base: https://raw.githubusercontent.com/Tufin/oasdiff/main/data/openapi-test1.yaml
           revision: https://raw.githubusercontent.com/Tufin/oasdiff/main/data/openapi-test3.yaml
           format: 'text'
-          check_breaking: true
+          check-breaking: true
