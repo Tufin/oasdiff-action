@@ -5,8 +5,10 @@ readonly base="$1"
 readonly revision="$2"
 readonly format="$3"
 readonly breaking_only="$4"
-readonly fail_on_diff="$5"
-readonly check_breaking="$6"
+readonly check_breaking="$5"
+readonly fail_on_diff="$6"
+
+echo "running oasdiff... base: $base, revision: $revision, format: $format, breaking_only: $breaking_only, check_breaking: $check_breaking, fail_on_diff: $fail_on_diff"
 
 if [ "$check_breaking" = "true" ] && [ "$fail_on_diff" = "true"  ]
 then

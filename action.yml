@@ -27,4 +27,5 @@ runs:
     - ${{ inputs.revision }}
     - ${{ inputs.format }}
     - ${{ inputs.breaking-only }}
+    - ${{ inputs.check-breaking }}
     - ${{ inputs.fail-on-diff }}
