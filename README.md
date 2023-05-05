@@ -8,7 +8,7 @@ Copy and paste the following snippet into your build .yml file:
 ```
 - name: Running OpenAPI Spec diff action
   id: test_breaking_changes
-  uses: Tufin/oasdiff-action@v2.1.2
+  uses: Tufin/oasdiff-action@v2.1.3
   with:
     base: 'specs/base.yaml'
     revision: 'specs/revision-breaking-changes.yaml'
