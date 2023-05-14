@@ -1,3 +1,7 @@
+# ⛔️ DEPRECATED
+
+This repository is now deprecated. We moved to a new repository architecture containing multiple actions that you can find [here](https://github.com/oasdiff/oasdiff-action)
+
 # oasdiff-action
 [![CI](https://github.com/Tufin/oasdiff-action/actions/workflows/test.yaml/badge.svg)](https://github.com/Tufin/oasdiff-action/actions)
 
